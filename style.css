@@ -1,0 +1,155 @@
+:root {
+  --primary: #e06724;
+}
+
+h1,
+h3 {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 2px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(20, 20, 20);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+form {
+  margin-top: 20px;
+  width: 80%;
+}
+
+textarea {
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 2px solid white;
+  height: 20vh;
+  padding: 20px;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma;
+  font-size: 18px;
+  transition: 0.2s all;
+}
+
+textarea::-webkit-input-placeholder {
+  color: rgb(223, 223, 223);
+  font-family: Verdana, Geneva, Tahoma;
+  font-size: 18px;
+}
+
+textarea:focus-visible {
+  outline: 0;
+}
+
+textarea:focus {
+  border: 2px solid var(--primary);
+}
+
+.azioni {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.azioni > button {
+  margin-top: 5px;
+}
+
+.btn {
+  border: 2px solid #fff;
+  border-radius: 500px;
+  padding: 8px 25px;
+  background: rgb(240, 240, 240);
+  font-size: 18px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+  box-shadow: -2px -2px 5px rgb(255 255 255 / 3%), 2px 2px 5px rgb(0 0 0 / 35%);
+}
+
+.position {
+  position: absolute;
+  bottom: 80%;
+  opacity: 0;
+}
+
+div > .position {
+  font-size: 20px;
+}
+
+.animation-in {
+  animation-name: slide-in;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes slide-in {
+  0% {
+    bottom: 50px;
+    opacity: 0;
+  }
+  50% {
+    bottom: 20%;
+    opacity: 1;
+  }
+
+  100% {
+    bottom: 50px;
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  @keyframes slide-in {
+    0% {
+      bottom: 10px;
+      opacity: 0;
+    }
+    50% {
+      bottom: 3%;
+      opacity: 1;
+    }
+
+    100% {
+      bottom: 10px;
+      opacity: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  h1 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+}

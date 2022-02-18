@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convertirore di stringhe | MirkoDev</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Convertirore di stringhe</h1>
+      <h3>
+        Inserisci il testo qui sotto e converti il contenuto nel modo che
+        preferisci 😎
+      </h3>
+
+      <form action="/" method="post">
+        <div class="row">
+          <textarea
+            id="content"
+            placeholder="Scrivi o copia qui il tuo testo da modificare"
+            autofocus=""
+          ></textarea>
+        </div>
+      </form>
+
+      <div class="azioni">
+        <button class="btn" id="uppercase">MAIUSCOLO</button>
+        <button class="btn" id="lowercase">minuscolo</button>
+        <button class="btn" id="capitalize">Lettera Maiuscola</button>
+        <button class="btn" id="alternate">AlTeRnAtO</button>
+        <button class="btn" id="alternate2">aLtErNaTo</button>
+      </div>
+      <div class="position" id="elemento-copiato">
+        Testo copiato negli appunti 🎉
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
